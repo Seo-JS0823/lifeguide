@@ -1,0 +1,20 @@
+/* 슬라이드 모달 컴포넌트 */
+.slide-modal-component {
+	position: fixed;
+	background-color: var(--primary-dark);
+}
+.slide-modal-open {
+	transform: translate(0%)
+}
+.slide-modal-left-close {
+	transform: translate(-100%);
+}
+.slide-modal-right-close {
+	transform: translate(100%);
+}
+.left {
+	left: 0;
+}
+.right {
+	right: 0;
+}

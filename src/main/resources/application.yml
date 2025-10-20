@@ -1,0 +1,26 @@
+server:
+  port: 8086
+
+spring:
+  application:
+    name: lifeguide
+  config:
+    import:
+      - optional:file:.env[.properties]
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: ${MY_URL}
+    username: ${MY_NAME}
+    password: ${MY_PASS}
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: true
+
+jwt:
+  secret: ${JWT_KEY}
+  
+logging:
+  level:
+    org.springframework.security: DEBUG
+    

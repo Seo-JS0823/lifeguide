@@ -1,0 +1,17 @@
+:root {
+	--primary-dark: #1B262C;
+	--primary-blue-dark: #0F4C75;
+	--primary-blue: #3282B8;
+	--primary-blue-light: #BBE1FA;
+	
+	--card-header-bg: #BBE1FA;
+	--card-header-text: #0F4C75;
+	--card-content-bg: #FFE6ED;
+	
+	--primary-main-bg: #FAFAFA;
+	
+	--active-event: 0 0 5px rgba(33,33,33, 0.3);
+	--primary-active-event: 0 0 2px #BBE1FA, 0 0 6px #FFF, 0 0 10px 1px #3282B833;
+	--hover-event: scale(1.04);
+}
+.ft-gray { color: #AAA; }

@@ -1,0 +1,138 @@
+/* 넓이 설정 스타일 */
+.-wA { width: 100%; }
+.-w1 { min-width: 10rem; }
+.-w2 { min-width: 20rem; }
+.-w3 { min-width: 30rem; }
+.-w4 { min-width: 40rem; }
+.-w5 { min-width: 50rem; }
+.-w6 { min-width: 60rem; }
+
+/* 높이 설정 스타일 */
+.-hA { height: 100%; }
+.-h03 { min-height: 3rem; }
+.-h04 { min-height: 4rem; }
+.-h05 { min-height: 5rem; }
+.-h06 { min-height: 6rem; }
+.-h07 { min-height: 7rem; }
+.-h08 { min-height: 8rem; }
+.-h09 { min-height: 9rem; }
+.-h1 { min-height: 10rem; }
+.-h2 { min-height: 20rem; }
+.-h3 { min-height: 30rem; }
+.-h4 { min-height: 40rem; }
+.-h5 { min-height: 50rem; }
+.-h6 { min-height: 60rem; }
+.-h7 { min-height: 70rem; }
+.-h8 { min-height: 80rem; }
+.-h9 { min-height: 90rem; }
+
+/* 폰트 사이즈 */
+.fts-12 { font-size: 1.2rem; }
+.fts-15 { font-size: 1.5rem; }
+.fts-18 { font-size: 1.8rem; }
+.fts-25 { font-size: 2.5rem; }
+
+/* 기본 버튼 스타일 */
+.btn {
+	padding: 0.6rem 2rem;
+	border-radius: 0.75rem;
+	font-size: 1.5rem;
+}
+.btn:active {
+	transform: scale(1.05);
+	box-shadow: var(--active-event);
+}
+.btn.primary-light {
+	background-color: var(--primary-blue-light);
+}
+.btn.primary-dark {
+	background-color: var(--primary-blue-dark);
+}
+
+/* 기본 인풋 스타일 */
+.input {
+	min-height: 3rem;
+	border: 2px solid var(--primary-blue);
+	border-radius: 2rem;
+	font-size: 1rem;
+	display: flex;
+	align-items: center;
+	padding: 1rem 1rem;
+	gap: 1rem;
+	background: white;
+}
+.input:focus-within {
+	box-shadow: var(--primary-active-event);
+	transform: scale(1.02);
+}
+
+/* 기본 인풋 스타일 안의 Img 태그 svg 이미지 기본 스타일 */
+.icon {
+	width: 2rem;
+	height: 2rem;
+}
+
+/* 기본 카드 스타일 */
+.card-component {
+	border: 1px solid #DDD;
+	border-radius: 2rem;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	padding: 0 2rem;
+	box-shadow: 0 0 10px rgba(33,33,33, 0.1);
+}
+.card-header {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	gap: 0.5rem;
+	border-bottom: 1px solid #DDD;
+	padding: 1rem 0;
+}
+.card-header-text {
+	color: var(--primary-dark);
+	padding: 0;
+	margin: 0 0 0 2rem;
+}
+.card-content {
+	width: 100%;
+	flex-grow: 1;
+	background-color: white;
+	padding: 1rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0.5rem;
+	font-size: 1.5rem;
+}
+.card-footer {
+	width: 100%;
+	border-top: 1px solid #DDD;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
