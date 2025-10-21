@@ -1,17 +1,32 @@
 :root {
-	--primary-dark: #1B262C;
-	--primary-blue-dark: #0F4C75;
-	--primary-blue: #3282B8;
-	--primary-blue-light: #BBE1FA;
+	--primary-blue: #1E90FF;
+	--primary-blue1: #1E90FF;
+	--primary-blue2: #0072DD;
+	--primary-blue3: #0056BB;
+	--primary-blue4: #003C9A;
+	--primary-blue5: #00247B;
 	
-	--card-header-bg: #BBE1FA;
-	--card-header-text: #0F4C75;
-	--card-content-bg: #FFE6ED;
+	--primary-green: #00AA00;
+	--primary-green1: #009B51;
+	--primary-green2: #008873;
+	--primary-green3: #00747F;
+	--primary-green4: #005D74;
+	--primary-green5: #2F4858;
 	
-	--primary-main-bg: #FAFAFA;
+	--btn-run: #1E90FF;
+	--btn-back: #DC3545;
 	
-	--active-event: 0 0 5px rgba(33,33,33, 0.3);
-	--primary-active-event: 0 0 2px #BBE1FA, 0 0 6px #FFF, 0 0 10px 1px #3282B833;
-	--hover-event: scale(1.04);
+	--white-10: #FFFFFF;
+	--white-20: #FAFAFA;
+	--white-30: #F0F0F0;
+	
+	--spot-10: #1E90FF;
+	--spot-20: #ADC4FB;
+	--spot-30: #E3F0FF;
+	--spot-40: #C4A775;
+	
+	--primary-border: 1px solid #DDD;
+	--primary-border-1: 1px solid #AAA;
+	--primary-box-shadow: 0 0 5px rgba(33,33,33,0.2);
+	--primary-blue-text-shadow: 0 0 2px #00247B;
 }
-.ft-gray { color: #AAA; }
