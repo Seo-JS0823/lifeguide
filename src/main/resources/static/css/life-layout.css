@@ -5,8 +5,21 @@
 	width: 2.4rem;
 	height: 2.4rem;
 }
+.life-profile-icon {
+	width: 3.5rem;
+	height: 3.5rem;
+	border-radius: 50%;
+}
 .life-input {
 	font-size: 1.5rem;
+	width: 30rem;
+}
+.life-hover {
+	cursor: pointer;
+	&:hover {
+		border-radius: 0.5rem;
+		background-color: #F0F0F0;
+	}
 }
 .open {
 	display: flex;
@@ -26,7 +39,25 @@
 		border-bottom: var(--primary-border-1);
 	}
 }
-
+.life-navbar-container::after {
+	content:'';
+	width: 100%;
+	height: 5px;
+	background-image: linear-gradient(#1E90FF99, white, white);
+}
+.life-navbar-container > .life-navbar-box:first-child {
+	justify-content: space-between;
+	color: #AAA;
+	
+	& > div {
+		display: flex;
+		gap: 1rem;
+	}
+	
+	& .life-navbar-item {
+		border: none;
+	}
+}
 .life-navbar-box {
 	width: 100%;
 	height: 6rem;
@@ -34,9 +65,9 @@
 	flex-direction: row;
 	align-items: center;
 	padding: 0 10rem;
-	
+	white-space: nowrap;
 	& > .life-navbar-item:first-child {
-	border-left: none;
+		border-left: none;
 	}
 }
 .life-navbar-href {
@@ -58,7 +89,7 @@
 	align-items: center;
 	border-left: var(--primary-border-1);
 }
-.life-navbar-item.relative {
+.relative {
 	position: relative;
 }
 .life-navbar-item:hover {
@@ -77,18 +108,20 @@
 	display: none;
 	flex-direction: column;
 	overflow: hidden;
+	
 	& a:last-child {
-	border: none;
+		border: none;
 	}
 }
 .life-navbar-list a {
 	color: black;
-	padding: 0.5rem 1rem;
+	padding: 1rem 2rem;
 	height: auto;
 	border-bottom: var(--primary-border);
 	font-size: 1.5rem;
+	
 	&:hover {
-	background-color: #EEE;
+		background-color: #EEE;
 	}
 }
 .life-navbar-search {
@@ -99,4 +132,99 @@
 	background-color: white;
 	border: 2px solid var(--primary-blue);
 	border-radius: 3rem;
+}
+.life-navbar-profile {
+	position: relative;
+	width: auto;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	cursor: pointer;
+	padding: 0.5rem 1rem;
+	background-color: var(--spot-30);
+	border-radius: 3rem;
+	font-size: 2rem;
+	gap: 1rem;
+	white-space: nowrap;
+	&:hover {
+		background-color: var(--white-10);
+	}
+}
+.profile-relative {
+	position: relative;
+	width: auto;
+}
+.life-navbar-profile-card {
+	position: absolute;
+	padding: 1rem 1.5rem;
+	top: 110%;
+	right:0;
+	width: 100%;
+	height: auto;
+	border: var(--primary-border);
+	border-radius: 1rem;
+	background-color: white;
+	font-size: 1.5rem;
+	display: flex;
+	flex-direction: column;
+	gap: 0;
+}
+.life-profile-card-header {
+	width: 100%;
+	display: flex;
+	align-items: center;
+	font-size: 1.2rem;
+	padding: 0.5rem 0;
+	border-bottom: var(--primary-border);
+	margin: 0.5rem 0;
+}
+.life-profile-card-header > div {
+	width: 50%;
+	text-align: center;
+}
+.life-profile-card-content {
+	width: 100%;
+	font-size: 1.5rem;
+	color: black;
+	padding: 1rem 0;
+	text-align: center;
+}
+@media (width < 950px) {
+	.life-navbar-box {
+		padding: 0;
+	}
+}
+
+@media (width < 750px) {
+	.life-input {
+		width: 20rem;
+	}
+}
+@media (width < 650px) {
+	html {
+		font-size: 8px;
+	}
+}
+@media (width < 525px) {
+	html {
+		font-size: 6px;
+	}
+}
+@media (width < 400px) {
+	html {
+		font-size: 5px;
+	}
+	.life-navbar-href {
+		font-weight: 500;
+	}
+	.life-navbar-item.relative div {
+		text-shadow: none;
+	}
+}
+
+.life-finance-container {
+	width: 100%;
+	height: auto;
+	min-height: calc(100vh - 12.5rem);
+	background-color: var(--white-10);
 }
