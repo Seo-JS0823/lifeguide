@@ -227,4 +227,72 @@
 	height: auto;
 	min-height: calc(100vh - 12.5rem);
 	background-color: var(--white-10);
+	padding: 0 10rem;
+	display: flex;
+	flex-direction: column;
+	gap:2rem;
+}
+
+/* 모든 사이트 공용 ParentNode */
+.container-col100 {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	height: auto;
+	background: var(--white-10);
+	font-size: 2rem;
+	overflow-y: auto;
+}
+.container-row100 {
+	display: flex;
+	align-items: center;
+	width: 100%;
+	height: auto;
+	background: var(--white-10);
+	font-size: 2rem;
+	overflow-y: auto;
+}
+.content-col100 {
+	display: flex;
+	flex-direction: column;
+	width: auto;
+	height: auto;
+}
+.content-row100 {
+	display: flex;
+	width: auto;
+	height: auto;
+}
+.defaultHeader {
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: center;
+	padding: 1rem;
+}
+.defaultCard {
+	border: var(--primary-border);
+	border-radius: 0.75rem;
+	background: var(--white-10);
+	overflow: hidden;
+	box-shadow: var(--primary-box-shadow);	
+}
+.defaultCard div:not(div:nth-of-type(2)) {
+	background-color: #1E90FF;
+}
+.defaultCard.sero2430 {
+	width: 24rem;
+	height: 30rem;
+}
+.defaultCard.sero3036 {
+	width: 30rem;
+	height: 36rem;
+}
+.defaultCard.sero2436 {
+	width: 24rem;
+	height: 36rem;
+}
+.defaultCard.garo3525 {
+	width: 35rem;
+	height: 25rem;
 }

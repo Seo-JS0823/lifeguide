@@ -54,6 +54,11 @@
 .-h95 { min-height: 95rem;}
 .-h100 { min-height: 100rem; }
 
+/* gap */
+.-g1 { gap: 1rem; }
+.-g2 { gap: 2rem; }
+.-g3 { gap: 3rem; }
+
 /* 폰트 사이즈 */
 .fts-12 { font-size: 1.2rem; }
 .fts-15 { font-size: 1.5rem; }

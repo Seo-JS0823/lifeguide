@@ -22,10 +22,10 @@
 		</div>
 		<div class="profile-relative">
 			<div class="life-navbar-profile">
-				<img class="life-profile-icon" src="/svg/냥뢰신.jfif"/>
+				<img class="life-profile-icon" src="/svg/gundam.png"/>
 				<div>Nick-Name <span style="font-size: 1rem; align-self: center;">∨</span></div>
 			</div>
-			<div class="life-navbar-profile-card close">
+			<div class="life-navbar-profile-card close" data-role="none">
 				<div class="life-profile-card-header">
 					<div class="life-hover">
 						<div>등급</div>
@@ -38,6 +38,7 @@
 				</div>
 				<div class="life-profile-card-content life-hover">마이페이지</div>
 				<div class="life-profile-card-content life-hover">친구 등록</div>
+				<div class="life-profile-card-content life-hover bg-logout">로그아웃</div>
 			</div>
 		</div>
 	</div>
@@ -76,8 +77,39 @@
 
 <!-- 메인 -->
 <div class="life-finance-container">
-	
+	<div class="container-row100">
+		<div class="-h50 content-row100">
+			<div class="defaultHeader -w50">Life Invaluable 무선 이어폰 추천</div>
+			<div class="defaultHeader -w30">dd</div>
+		</div>
+	</div>
+	<div class="container-col100">
+		<div class="-w50 -h50 -g2 content-row100">
+			<div class="content-col100 defaultCard sero2436">
+				<div class="-wA -h03"></div>
+				<div class="-wA -hA bg-white"></div>
+				<div class="-wA -h02"></div>
+			</div>
+		</div>
+	</div>
 </div>
 <script src="/js/life-util.js"></script>
+<script>
+	const profile = gettersClass('profile-relative');
+	profile.addEventListener('click', () => {
+		const profileCard = gettersClass('life-navbar-profile-card');
+		const role = profileCard.getAttribute('data-role');
+		
+		if(role === 'none') {
+			profileCard.classList.remove('close');
+			profileCard.classList.add('open');
+			profileCard.setAttribute('data-role', 'click');
+		} else if (role === 'click') {
+			profileCard.classList.remove('open');
+			profileCard.classList.add('close');
+			profileCard.setAttribute('data-role', 'none');			
+		}
+	})
+</script>
 </body>
 </html>
