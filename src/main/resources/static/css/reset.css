@@ -42,3 +42,23 @@ ul, li {
 	padding: 0;
 	margin: 0;
 }
+
+main {
+	width: 100%;
+	height: calc(100vh - 13rem);
+	padding: 0 30rem;
+	display: flex;
+	flex-direction: column;
+	gap:2rem;
+}
+@media (width < 1200px) {
+	main {
+		padding: 0 10rem;
+	}
+}
+
+@media (width < 900px) {
+	main {
+		padding: 0 1rem;
+	}
+}

@@ -65,7 +65,17 @@
 .fts-18 { font-size: 1.8rem; }
 .fts-25 { font-size: 2.5rem; }
 
-
+/* span 폰트 스타일 */
+.ft-family-head {
+	font-size: 6rem;
+	color: var(--primary-blue);
+	font-family: Eommakkaturi;
+}
+@media(width < 650px) {
+	.ft-family-head {
+		font-size: 4rem;
+	}
+}
 
 
 
